@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-medieval {
+  font-family: 'MedievalSharp', cursive;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.timeline-card {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Banner animations */
+.banner-scroll {
+  display: inline-flex;
+  animation: scroll 70s linear infinite;
+  will-change: transform;
+}
+
+/* Sponsor scroll animation */
+.sponsor-scroll {
+  display: flex;
+  animation: sponsorScroll 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes sponsorScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+/* Add smooth animation for hover effects */
+.banner-scroll img,
+.sponsor-scroll img {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
