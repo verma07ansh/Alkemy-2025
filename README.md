@@ -2,6 +2,10 @@
 
 Alkemy is the annual college event organized by Bharati Vidyapeeth's Department of Engineering and Technology (DET) & Department of Management Studies (DMS) in Kharghar, Navi Mumbai. This website serves as the digital platform for event information, registration, and updates.
 
+## 🌐 Demo
+
+Check out the live demo here: [Alkemy 2025 Website](https://alkemy-bvdu-2025.netlify.app/)
+
 ## 🌟 Features
 
 - **Interactive Event Calendar**: Browse through a medieval-themed timeline of events
